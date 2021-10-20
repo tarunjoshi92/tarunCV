@@ -34,6 +34,9 @@
 	.bg-dark{
 		padding-bottom: 20px;
 	}
+	.aboutSection .heading h2, .skills .heading h2, .portfolio .heading h2, .contact .heading h2{
+		margin-top: 40px;
+	}
 	.aboutSection .heading h2:before, .skills .heading h2:before, .portfolio .heading h2:before, .contact .heading h2:before{
 		font-size: 54px
 	}
