@@ -1,4 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Modak&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap');*/
 :root {
     --yellow: #FFC300;
     --white: #fff;
@@ -107,7 +106,6 @@ body {
 
 .bannerWrapper button.btn {
     background-color: #FFC300;
-    /*font-weight: 600;*/
     padding: 8px 20px;
     border: none;
     position: relative;
@@ -159,26 +157,6 @@ body {
     max-width: 100%;
 }
 
-/*.bannerWrapper .myImage:before {
-    position: absolute;
-    content: '';
-    width: 125px;
-    height: 158px;
-    background-image: url('../images/vector.png');
-    bottom: 35px;
-    left: 0px;
-}
-
-.bannerWrapper .myImage:after {
-    position: absolute;
-    content: '';
-    width: 90px;
-    height: 118px;
-    background-image: url('../images/vector.png');
-    background-size: 100%;
-    top: 30px;
-    right: 50px;
-}*/
 
 @-webkit-keyframes mover {
     0% {
@@ -401,9 +379,6 @@ body {
     margin: 1px 2px;
     position: absolute;
     border-radius: 10px;
-    /*-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
-	-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;	 
-	box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;*/
 }
 
 .graphic-design {
@@ -773,7 +748,4 @@ Remove or comment-out the code block below to see how the browser will fall-back
 	opacity: 0.6;
 	display: block;
 	padding: 30px 0 20px 0;
-}
-.bg{
-	/*transform: scale(1.1);*/
 }
