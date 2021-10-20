@@ -11,7 +11,7 @@
 		display: none;	
 	}
 	.aboutSection .heading h2:before, .skills .heading h2:before, .portfolio .heading h2:before, .contact .heading h2:before{
-		font-size: 58px
+		font-size: 56px
 	}
 	.bannerWrapper .myImage{
 		padding-top: 25px;
