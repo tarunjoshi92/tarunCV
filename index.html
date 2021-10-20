@@ -14,23 +14,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Modak" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="font/stylesheet.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="font/stylesheet.css" rel="stylesheet" disabled>
+    <link rel="stylesheet" href="css/style.css" rel="stylesheet" disabled>
+    <link rel="stylesheet" href="css/responsive.css" rel="stylesheet" disabled>
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/custom.js" defer></script>
+    <script>
+        AOS.init();
+    </script>
 </head>
 
 <body>
-	<span class="cursor">
-  <span class="cursor-move-inner">
-    <span class="cursor-inner"></span>
-  </span>
-  <span class="cursor-move-outer">
-    <span class="cursor-outer"></span>
-  </span>
-</span>
+    <span class="cursor">
+        <span class="cursor-move-inner">
+            <span class="cursor-inner"></span>
+        </span>
+        <span class="cursor-move-outer">
+            <span class="cursor-outer"></span>
+        </span>
+    </span>
     <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">
+            <a href="#" class="navbar-brand" aria-label="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 79 79">
                     <path id="logo" d="M39.5,79A39.511,39.511,0,0,1,24.125,3.1,39.51,39.51,0,0,1,54.875,75.9,39.252,39.252,0,0,1,39.5,79Zm1.491-60.523V60.138L29.746,71.383l.617.778L48.65,60.77l.235-.147V25.981H59.293v-7.5h-18.3ZM29.153,30.705V66.626l.854-.854,6.764-6.764.146-.147V30.705H29.153Zm-10.8-12.228v7.635H36.787V18.477H18.355ZM40.5,6.5v8h9v-8Z" fill="#ffc300" />
                 </svg>
@@ -87,21 +96,21 @@
                         </button>
                         <ul class="socialMedia">
                             <li>
-                                <a href="https://www.facebook.com/tarun.joshi.526/" target="_blank" rel="noreferrer">
+                                <a href="https://www.facebook.com/tarun.joshi.526/" target="_blank" rel="noreferrer" aria-label="Facebook ID">
                                     <svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="9.428" height="16.928" viewBox="0 0 9.428 16.928">
                                         <path id="Path_2" data-name="Path 2" d="M12.376,20.678H16V13.542h3.268L19.631,10H16V8.2a.9.9,0,0,1,.907-.891h2.721V3.75H16.91A4.5,4.5,0,0,0,12.376,8.2V10H10.562L10.2,13.542h2.173Z" transform="translate(-10.203 -3.75)" />
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.behance.net/tarunjoshi" target="_blank" rel="noreferrer">
+                                <a href="https://www.behance.net/tarunjoshi" target="_blank" rel="noreferrer" aria-label="Behance ID">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24.782" height="16.928" viewBox="0 0 24.782 16.928">
                                         <path id="behance" d="M10,13.689s2.345-.189,2.345-3.154A4.064,4.064,0,0,0,8,6.122H0V22.7H8s4.884.165,4.884-4.894C12.882,17.8,13.1,13.689,10,13.689ZM3.525,9.067H8s1.088,0,1.088,1.724-.64,1.977-1.366,1.977h-4.2ZM7.772,19.753H3.525V15.322H8S9.619,15.3,9.619,17.6c0,1.939-1.211,2.14-1.848,2.155Zm11.622-9.415c-5.913,0-5.908,6.371-5.908,6.371s-.4,6.337,5.908,6.337c0,0,5.258.326,5.258-4.408h-2.7s.09,1.784-2.464,1.784a2.564,2.564,0,0,1-2.707-2.886h7.96s.879-7.2-5.344-7.2ZM21.8,15.322H16.751s.33-2.555,2.7-2.555S21.8,15.322,21.8,15.322ZM22.429,7.1H16.087V9.14h6.342V7.1Z" transform="translate(0 -6.122)" />
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://linkedin.com/in/tarun-joshi-62489a22" target="_blank" rel="noreferrer">
+                                <a href="http://linkedin.com/in/tarun-joshi-62489a22" target="_blank" rel="noreferrer" aria-label="Linkedin ID">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16.928" height="16.928" viewBox="0 0 16.928 16.928">
                                         <path id="linkedin" d="M3.843,16.928V5.507H.214V16.928ZM2.029,3.946A1.932,1.932,0,0,0,4.082,1.973,1.925,1.925,0,0,0,2.053,0,1.932,1.932,0,0,0,0,1.973,1.919,1.919,0,0,0,2.005,3.946h.024ZM5.851,16.928H9.48V10.55A2.71,2.71,0,0,1,9.6,9.624a2,2,0,0,1,1.862-1.389c1.313,0,1.838,1.047,1.838,2.583v6.11h3.629V10.379c0-3.508-1.79-5.14-4.178-5.14A3.6,3.6,0,0,0,9.456,7.163h.024V5.506H5.852c.047,1.072,0,11.422,0,11.422Z" />
                                     </svg>
@@ -335,7 +344,7 @@
             </div>
             <ul class="socialMedia">
                 <li>
-                    <a href="https://www.facebook.com/tarun.joshi.526/" target="_blank" rel="noreferrer">
+                    <a href="https://www.facebook.com/tarun.joshi.526/" target="_blank" rel="noreferrer" aria-label="Facebook ID">
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                             <rect x="1" y="1" width="25" height="25" rx="7.13616" stroke="#1877f2" stroke-width="2" />
                             <path d="M19.8968 8.1543V8.1543C16.9993 8.1543 14.6504 10.5032 14.6504 13.4007V25.4407" stroke="#1877f2" stroke-width="2" stroke-linecap="round" />
@@ -344,7 +353,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://linkedin.com/in/tarun-joshi-62489a22" target="_blank" rel="noreferrer">
+                    <a href="http://linkedin.com/in/tarun-joshi-62489a22" target="_blank" rel="noreferrer" aria-label="Linkedin ID">
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                             <rect x="1" y="1" width="25" height="25" rx="7.13616" stroke="#0077b5" stroke-width="2" />
                             <line x1="8.15723" y1="11.9707" x2="8.15723" y2="19.6031" stroke="#0077b5" stroke-width="2" stroke-linecap="round" />
@@ -354,7 +363,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/tarun_jo_shi/?hl=en" target="_blank" rel="noreferrer">
+                    <a href="https://www.instagram.com/tarun_jo_shi/?hl=en" target="_blank" rel="noreferrer" aria-label="Instagram ID">
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                             <rect x="1" y="1" width="25" height="25" rx="7.13616" stroke="#fd1d1d" stroke-width="2" />
                             <circle cx="13.5009" cy="13.2655" r="5.09851" stroke="#fd1d1d" stroke-width="2" />
@@ -375,15 +384,6 @@
         </div>
     </section>
     <!-- Contact Section -->
-    <!-- javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-    AOS.init();
-    </script>
 </body>
 
 </html>
