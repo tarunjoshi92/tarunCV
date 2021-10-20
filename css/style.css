@@ -364,7 +364,7 @@ body {
     color: var(--secondOffColor);
 }
 
-.educationCard h4 {
+.educationCard h3 {
     color: var(--white);
     font-size: 18px;
     margin: 3px 0;
