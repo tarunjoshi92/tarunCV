@@ -28,4 +28,10 @@
 	.mbHide{
 		display: none;
 	}
+	#navbarCollapse ul li a{
+		text-align: center;
+	};
+	.bg-dark{
+		padding-bottom: 20px;
+	}
 }
