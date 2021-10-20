@@ -1,0 +1,31 @@
+@media (max-width: 1024px){
+	.bannerWrapper{
+		padding: 20px 0;
+		min-height: auto
+	}
+	.aboutSection, .skills, .portfolio, .contact{
+		padding: 50px 0 0 0;
+		min-height: auto;
+	}
+	.nav-item.active:before{
+		display: none;	
+	}
+	.aboutSection .heading h2:before, .skills .heading h2:before, .portfolio .heading h2:before, .contact .heading h2:before{
+		font-size: 58px
+	}
+	.bannerWrapper .myImage{
+		padding-top: 25px;
+	}
+}
+@media (max-width: 768px){
+	.aboutInfo .table tr{
+		display: grid;
+	}
+	.bannerWrapper .myImage{
+		width: 80%;
+		margin: 20px auto
+	}
+	.mbHide{
+		display: none;
+	}
+}

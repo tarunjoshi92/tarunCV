@@ -1,0 +1,779 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Modak&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap');*/
+:root {
+    --yellow: #FFC300;
+    --white: #fff;
+    --blackBg: #000;
+    --offWhite: #c9c9c9;
+    --secondOffColor: #989dbb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--blackBg);
+    background-image: url('https://assets.website-files.com/605a8ad8853d7fc62334c73e/605b52d29393dc3905014a63_blob-blur-my-work-nft-webflow-tempalte.svg');
+    background-size: cover;
+    background-position: right center;
+}
+
+.bg-dark {
+    background: rgb(0, 0, 0) !important;
+    background: linear-gradient(53deg, rgb(22 20 43) 0%, rgb(30 6 33) 100%) !important;
+}
+
+.navbar-dark .navbar-brand {
+    font-family: 'Modak', cursive;
+    font-size: 30px;
+    color: var(--yellow) !important;
+    padding: 0;
+}
+
+#navbarCollapse ul li a {
+    color: var(--offWhite);
+    margin: 0 12px;
+}
+#navbarCollapse ul li a:hover{
+	color: var(--yellow)
+}
+#navbarCollapse ul li.active a:hover{
+	color: var(--offWhite)
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item.active:before {
+    position: absolute;
+    content: '';
+    left: 5px;
+    height: 60%;
+    width: 8px;
+    border: 4px solid var(--yellow);
+    border-right: 0;
+    top: 7px;
+}
+
+/*Banner section*/
+.bannerWrapper {
+    background: linear-gradient(53deg, rgb(22 20 43) 0%, rgb(30 6 33) 100%);
+    margin-top: 60px;
+    padding: 60px 0;
+    min-height: 100vh;
+}
+
+.bannerWrapper h5 {
+    text-transform: uppercase;
+    color: var(--secondOffColor);
+    position: relative;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.bannerWrapper h5:before {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 61px;
+    background-color: #FFC300;
+    left: 0;
+    bottom: -8px
+}
+
+.bannerWrapper h1 {
+    font-family: 'Mistral';
+    font-size: 80px;
+    color: var(--white);
+}
+
+.bannerWrapper p {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 1.9;
+    margin: 15px 0 40px 0;
+}
+
+.bannerWrapper button.btn a {
+    color: var(--blackBg);
+}
+
+.bannerWrapper button.btn a:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.bannerWrapper button.btn {
+    background-color: #FFC300;
+    /*font-weight: 600;*/
+    padding: 8px 20px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: 0.2s ease-in-out color;
+    -o-transition: 0.2s ease-in-out color;
+    -ms-transition: 0.2s ease-in-out color;
+    -moz-transition: 0.2s ease-in-out color;
+    transition: 0.2s ease-in-out color;
+}
+
+.bannerWrapper button.btn::before {
+    content: " ";
+    display: block;
+    width: 92px;
+    height: 93px;
+    position: absolute;
+    left: 24px;
+    top: -26px;
+    background: var(--blackBg);
+    border-radius: 100%;
+    z-index: -1;
+    transform: scale(0);
+    -webkit-transition: 0.4s ease-in-out transform;
+    -o-transition: 0.4s ease-in-out transform;
+    -ms-transition: 0.4s ease-in-out transform;
+    -moz-transition: 0.4s ease-in-out transform;
+    transition: 0.4s ease-in-out transform;
+}
+
+.bannerWrapper button.btn:hover,
+.bannerWrapper button.btn:hover a {
+    color: #FFC300;
+    z-index: 2
+}
+
+.bannerWrapper button.btn:hover::before {
+    transform: scale(1.5);
+}
+
+.bannerWrapper .introText {
+    padding: 30px 20px;
+}
+
+.bannerWrapper .myImage {
+    position: relative;
+}
+.bannerWrapper img {
+    max-width: 100%;
+}
+
+/*.bannerWrapper .myImage:before {
+    position: absolute;
+    content: '';
+    width: 125px;
+    height: 158px;
+    background-image: url('../images/vector.png');
+    bottom: 35px;
+    left: 0px;
+}
+
+.bannerWrapper .myImage:after {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 118px;
+    background-image: url('../images/vector.png');
+    background-size: 100%;
+    top: 30px;
+    right: 50px;
+}*/
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+/*Social Media*/
+.socialMedia {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.socialMedia li {
+    margin-right: 10px;
+}
+
+.socialMedia li a {
+    padding: 5px 8px;
+}
+
+.introText .socialMedia li a svg {
+    -webkit-transition: 0.50s ease-out;
+    -moz-transition: 0.50s ease-out;
+    transition: 0.50s ease-out;
+    fill: var(--secondOffColor);
+}
+
+.contact .socialMedia li a svg {
+    -webkit-transition: 0.50s ease-out;
+    -moz-transition: 0.50s ease-out;
+    transition: 0.50s ease-out;
+}
+
+.socialMedia li a svg:hover {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+.socialMedia li:nth-child(1) a svg:hover {
+    fill: #1877f2;
+}
+
+.socialMedia li:nth-child(2) a svg:hover {
+    fill: #0057ff;
+}
+
+.socialMedia li:nth-child(3) a svg:hover {
+    fill: #0077b5;
+}
+
+.socialMedia li:nth-child(4) {
+    margin-left: 30px;
+}
+
+.socialMedia li:nth-child(4) a {
+    padding: 0;
+    color: var(--secondOffColor);
+}
+
+.socialMedia li:nth-child(4) a:hover {
+    text-decoration: none;
+}
+
+/*About section*/
+.aboutSection,
+.skills,
+.portfolio {
+    min-height: 100vh;
+    padding: 130px 0 0px 0
+}
+
+.aboutSection .heading,
+.skills .heading,
+.portfolio .heading {
+    margin-bottom: 40px
+}
+
+.aboutSection .heading h2,
+.skills .heading h2,
+.portfolio .heading h2,
+.contact .heading h2 {
+    font-family: 'Mistral';
+    font-size: 40px;
+    color: var(--yellow);
+    text-align: center;
+    position: relative;
+}
+
+.aboutSection .heading h2:before,
+.skills .heading h2:before,
+.portfolio .heading h2:before,
+.contact .heading h2:before {
+    position: absolute;
+    content: 'BIOGRAPHY';
+    bottom: -9px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 85px;
+    font-family: 'Gill Sans';
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white);
+    opacity: 0.15;
+}
+
+.aboutSection img {
+    max-width: 100%;
+}
+
+.aboutSection .aboutInfo {
+    padding: 20px
+}
+
+.aboutSection .aboutInfo p {
+    color: var(--offWhite);
+    line-height: 1.7;
+    margin-bottom: 30px
+}
+
+.aboutInfo h3 {
+    font-size: 18px;
+    color: var(--offWhite);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--yellow)
+}
+
+.aboutInfo .table td {
+    padding-left: 0;
+    color: var(--offWhite);
+}
+
+.aboutInfo .table td p {
+    margin-bottom: 2px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.aboutInfo .table td span {
+    font-size: 15px;
+    font-style: italic;
+    color: var(--secondOffColor)
+}
+
+/*Skills Section*/
+.skills {}
+
+.skills .heading h2:before {
+    content: 'EXPERTIES'
+}
+
+.educationCard {
+    background-color: #1a1b1d;
+    padding: 40px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.educationCard p {
+    margin: 0;
+    color: var(--secondOffColor);
+}
+
+.educationCard h4 {
+    color: var(--white);
+    font-size: 18px;
+    margin: 3px 0;
+}
+
+.barSection {
+    padding: 5px 0;
+}
+
+
+#skill {
+    list-style: none;
+    position: relative;
+    line-height: 2em;
+    padding: 30px 0;
+}
+
+#skill li {
+    margin-bottom: 40px;
+    background: #101010;
+    height: 13px;
+    border-radius: 10px;
+}
+
+#skill li h3 {
+    position: relative;
+    top: -20px;
+    font-size: 14px;
+    color: var(--offWhite)
+}
+
+.bar {
+    height: 11px;
+    margin: 1px 2px;
+    position: absolute;
+    border-radius: 10px;
+    /*-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;	 
+	box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;*/
+}
+
+.graphic-design {
+    width: 85%;
+    -moz-animation: graphic-design 2s ease-out;
+    -webkit-animation: graphic-design 2s ease-out;
+    background-color: #f674a4;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
+    background-image: -webkit-linear-gradient(top, #f674a4, #e06995);
+    background-image: -moz-linear-gradient(top, #f674a4, #e06995);
+    background-image: -ms-linear-gradient(top, #f674a4, #e06995);
+    background-image: -o-linear-gradient(top, #f674a4, #e06995);
+    background-image: linear-gradient(top, #f674a4, #e06995);
+}
+
+.html-css {
+    width: 90%;
+    -moz-animation: html-css 2s ease-out;
+    -webkit-animation: html-css 2s ease-out;
+    background-color: #f0bb4b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+    background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+}
+
+.illustrator {
+    width: 70%;
+    -moz-animation: illustrator 2s ease-out;
+    -webkit-animation: illustrator 2s ease-out;
+    background-color: #a1ce5b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+    background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: linear-gradient(top, #a1ce5b, #91ba52);
+}
+
+.ui-design {
+    width: 80%;
+    -moz-animation: ui-design 2s ease-out;
+    -webkit-animation: ui-design 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+    background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: linear-gradient(top, #66b3cc, #5da3ba)
+}
+
+.web-design {
+    width: 85%;
+    -moz-animation: web-design 2s ease-out;
+    -webkit-animation: web-design 2s ease-out;
+    background-color: #f674a4;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
+    background-image: -webkit-linear-gradient(top, #f674a4, #e06995);
+    background-image: -moz-linear-gradient(top, #f674a4, #e06995);
+    background-image: -ms-linear-gradient(top, #f674a4, #e06995);
+    background-image: -o-linear-gradient(top, #f674a4, #e06995);
+    background-image: linear-gradient(top, #f674a4, #e06995);
+}
+
+.bootstrap {
+    width: 90%;
+    -moz-animation: bootstrap 2s ease-out;
+    -webkit-animation: bootstrap 2s ease-out;
+    background-color: #f0bb4b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+    background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+}
+
+.react {
+    width: 25%;
+    -moz-animation: react 2s ease-out;
+    -webkit-animation: react 2s ease-out;
+    background-color: #a1ce5b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+    background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: linear-gradient(top, #a1ce5b, #91ba52);
+}
+
+@-moz-keyframes graphic-design {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@-moz-keyframes web-design {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@-moz-keyframes html-css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@-moz-keyframes bootstrap {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@-moz-keyframes illustrator {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@-moz-keyframes react {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 25%;
+    }
+}
+
+@-moz-keyframes ui-design {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@-webkit-keyframes graphic-design {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@-webkit-keyframes web-design {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@-webkit-keyframes html-css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@-webkit-keyframes bootstrap {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@-webkit-keyframes illustrator {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@-webkit-keyframes react {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 25%;
+    }
+}
+
+@-webkit-keyframes ui-design {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+/*Galley css*/
+.wrapper a:hover {
+    text-decoration: none;
+}
+
+.wrapper p {
+    color: var(--white);
+    text-align: center;
+    margin: 5px 0 0 0
+}
+
+.portfolio .heading h2 {
+    margin-bottom: 30px
+}
+
+.portfolio .heading h2:before {
+    content: 'PROJECTS'
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
+}
+
+.gallery-item {
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 24rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    min-height: 185px;
+    max-height: 185px;
+    border-radius: 10px;
+    border: 7px solid #1a1b1d;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 185px;
+    object-fit: fill;
+    transition: transform 400ms ease-out;
+    max-width: 100%;
+}
+
+.gallery-image:hover {
+    transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 1.5rem;
+    }
+
+    .gallery,
+    .gallery-item {
+        margin: 0;
+    }
+}
+
+/*Contact css*/
+.contact {
+    min-height: 100vh;
+    padding: 140px 0 0px 0
+}
+
+.contact .heading h2 {
+    margin-bottom: 40px;
+}
+
+.contact .heading h2:before {
+    content: "LET's SAY HI"
+}
+
+.contact .socialMedia {
+    justify-content: center;
+}
+
+.contact .socialMedia li:nth-child(4) {
+    margin-left: 0
+}
+
+.contact .socialMedia li:nth-child(1) a svg:hover,
+.contact .socialMedia li:nth-child(2) a svg:hover,
+.contact .socialMedia li:nth-child(3) a svg:hover {
+    fill: transparent;
+}
+
+.contact .card {
+    background-color: transparent;
+    padding: 25px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.contact .card h3,
+.contact .card h3 a {
+    color: var(--white);
+    font-weight: 800;
+}
+
+.contact .card h3 a:hover {
+    text-decoration: none;
+}
+
+.contact .card h2 {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 42px
+}
+
+.contact .card p {
+    color: var(--secondOffColor);
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 18px
+}
+
+.footer span{
+	color: var(--secondOffColor);
+	opacity: 0.6;
+	display: block;
+	padding-top: 30px;
+}
+.bg{
+	/*transform: scale(1.1);*/
+}
