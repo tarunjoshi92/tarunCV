@@ -233,10 +233,14 @@ body {
 .socialMedia li:nth-child(4) a {
     padding: 0;
     color: var(--secondOffColor);
+    opacity: 0.9;
+    transition: 0.3s;
 }
 
 .socialMedia li:nth-child(4) a:hover {
     text-decoration: none;
+    opacity: 1;
+    color: var(--yellow);
 }
 
 /*About section*/
