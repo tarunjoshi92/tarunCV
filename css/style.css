@@ -753,3 +753,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
 	display: block;
 	padding: 30px 0 20px 0;
 }
+
+#my_audio{
+    position: absolute;
+    opacity: 0;
+}

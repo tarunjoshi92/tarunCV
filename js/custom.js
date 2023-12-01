@@ -50,4 +50,5 @@ $(document).ready(function() {
 
     moveBackground();
 
+    $("#my_audio").get(0).play();
 });
