@@ -50,5 +50,9 @@ $(document).ready(function() {
 
     moveBackground();
 
-    $("#my_audio").get(0).play();
+});
+
+$(document).on("click", function () {
+    document.getElementById("my_audio").muted = false;
+    document.getElementById("my_audio").play();
 });
