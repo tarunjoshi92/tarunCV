@@ -435,7 +435,7 @@ body {
 }
 
 .ui-design {
-    width: 80%;
+    width: 90%;
     -moz-animation: ui-design 2s ease-out;
     -webkit-animation: ui-design 2s ease-out;
     background-color: #66b3cc;
@@ -474,7 +474,7 @@ body {
 }
 
 .react {
-    width: 25%;
+    width: 65%;
     -moz-animation: react 2s ease-out;
     -webkit-animation: react 2s ease-out;
     background-color: #a1ce5b;
