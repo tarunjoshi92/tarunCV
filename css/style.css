@@ -1465,6 +1465,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     .hamburger { display: flex; }
     #hero { padding: 100px 28px 70px; }
     .hero-inner { grid-template-columns: 1fr; gap: 60px; text-align: center; }
+    h1.hero-name{font-size: clamp(38px, 6vw, 80px);}
     .hero-btns { justify-content: center; }
     .hero-stats { justify-content: center; }
     .hero-image-wrap { order: -1; }
